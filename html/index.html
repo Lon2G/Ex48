@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jackson Electronics – Registration</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="main">
+    <div id="main-header">
+      <div class="brand-pill">
+        <img src="../images/Jackson.gif" alt="Jackson Electronics">
+      </div>
+      <h1>Registration Form</h1>
+      <p>Register your Jackson Electronics product here</p>
+    </div>
+
+    <form>
+      <div class="name-row">
+        <label for="first">First Name:</label>
+        <input id="first" type="text">
+        <label for="last">Last Name:</label>
+        <input id="last" type="text">
+      </div>
+
+      <div class="form-row">
+        <label for="addr1">Address #1:</label>
+        <input id="addr1" type="text" class="w-long">
+      </div>
+      <div class="form-row">
+        <label for="addr2">Address #2:</label>
+        <input id="addr2" type="text" class="w-long">
+      </div>
+
+      <div class="city-row">
+        <label for="city">City:</label>
+        <input id="city" type="text">
+        <label for="state">State:</label>
+        <input id="state" type="text" maxlength="2">
+        <label for="zip">Zip:</label>
+        <input id="zip" type="text">
+      </div>
+
+      <div class="form-row">
+        <label for="country">Country:</label>
+        <input id="country" type="text" class="w-long" value="United States">
+      </div>
+
+      <hr class="section-rule">
+
+      <div class="form-row">
+        <label for="product">Product:</label>
+        <select id="product" class="w-product">
+          <option>ScanMaster</option>
+          <option>PrintPro</option>
+          <option>SoundWave</option>
+          <option>VisionCam</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="date">Date Purchased:</label>
+        <input id="date" type="text" class="w-date" placeholder="MM/DD/YYYY">
+      </div>
+
+      <div class="form-row">
+        <label for="serial">Serial #:</label>
+        <input id="serial" type="text" class="w-serial">
+      </div>
+
+      <div class="inline-group">
+        <label>Used for:</label>
+        <div class="choices">
+          <label><input type="radio" name="usedfor"> Home</label>
+          <label><input type="radio" name="usedfor"> Educational Institution</label>
+          <label><input type="radio" name="usedfor"> Business</label>
+          <label><input type="radio" name="usedfor"> Other</label>
+          <label><input type="radio" name="usedfor" checked> Government</label>
+        </div>
+      </div>
+
+      <div class="inline-group">
+        <label>System (check all that apply):</label>
+        <div class="choices">
+          <label><input type="checkbox"> Windows</label>
+          <label><input type="checkbox"> UNIX</label>
+          <label><input type="checkbox"> Macintosh</label>
+          <label><input type="checkbox"> Other</label>
+        </div>
+      </div>
+
+      <hr class="section-rule">
+
+      <div class="form-row textarea-row">
+        <label for="comments">Comments?</label>
+        <textarea id="comments"></textarea>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit">Click to register</button>
+        <button type="button">Click to cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
